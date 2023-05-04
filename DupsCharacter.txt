@@ -1,0 +1,31 @@
+  
+  
+using System;
+
+class program
+{
+
+    static int characters = 256;//an array of size 256 is used for str 
+     public static void Counts(String str, int[] count)
+    {
+        for (int i = 0; i < str.Length; i++)//finding duplicate characters
+            count[str[i]]++;
+    }
+    static void Duplicates(String str)//counting the duplicate characters
+    {
+
+        int[] count = new int[characters];
+        Counts (str, count);// calling the function counts
+
+        for (int i = 0; i < characters; i++)
+            if (count[i] > 1)
+               
+          Console.WriteLine((char)i + " -> "  + count[i]);//printing the outputs
+    }
+    public static void Main()
+    {
+        String str = Console.ReadLine();//teking input from user
+        Duplicates(str);// calling the function duplicates
+    }
+}
+
