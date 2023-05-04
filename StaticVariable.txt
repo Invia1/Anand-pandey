@@ -1,0 +1,13 @@
+
+using System;
+class student
+{  
+    public static string Name = "Anand pandey";// Creating static variable Using static keyword
+}
+    public class program
+{
+           static public void Main()
+    {  
+        Console.WriteLine("Name of student is : ",student.Name); // Accessing the static variable using its class name
+    }
+}
