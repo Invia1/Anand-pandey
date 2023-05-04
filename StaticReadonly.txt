@@ -1,0 +1,18 @@
+
+using System;
+class student
+{  
+    public static readonly string Name ;// Creating readonly static  variable Using static keyword
+    static student()// making constructor
+    {
+        Name = "Anand Pandey";
+    }
+}
+    public class program
+{
+            static public void Main()
+    {
+        string n = student.Name;
+        Console.WriteLine("Name of student is : "+ n); // Accessing the static variable using its class name
+    }
+}
