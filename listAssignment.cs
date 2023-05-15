@@ -9,7 +9,7 @@ class PersonDetail
     List<string> list = new List<string>();
     public void entry()
     {
-        list.Add("anand");
+        list.Add("anand");  //adding the elements
         list.Add("ashish");
         list.Add("ani");
 
@@ -20,7 +20,7 @@ class PersonDetail
         }
     }
 
-    public void entry2()
+    public void entry2()  //Inserting elments
     {
         list.Insert(2, "sandeep");
         list.Insert(1, "ankush");
@@ -33,7 +33,7 @@ class PersonDetail
     }
 
 
-    public void Delete()
+    public void Delete()  //deleting elements
     {
         list.Remove("ankush");
         list.Remove("ashish");
@@ -45,7 +45,7 @@ class PersonDetail
         }
     }
 
-    public void find(string ctr)
+    public void find(string ctr)  //searching for the elements
     {
 
 
@@ -63,7 +63,7 @@ class PersonDetail
 
     }
 
-    public void fetchAll()
+    public void fetchAll()  //fetchuing the elmentes
     {
         foreach (var ctr in list)
         {
@@ -76,12 +76,12 @@ class user
     public static void Main()
     {
         PersonDetail obj = new PersonDetail();
-        obj.entry();
-        obj.entry2();
-        obj.Delete();
-        Console.WriteLine("enter the name");
+        obj.entry(); //calling add function
+        obj.entry2();// calling insert function
+        obj.Delete();// calling delete function
+        Console.WriteLine("enter the name");// taking user input for searching elements 
         string temp = Console.ReadLine();
-        obj.find(temp);
-        obj.fetchAll();
+        obj.find(temp);//calling seatrch function
+        obj.fetchAll(); //calling fetch function
     }
 }
